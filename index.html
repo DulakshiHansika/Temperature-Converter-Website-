@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temp Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Background-->
+    <div class="glow-bg-1"></div>
+    <div class="glow-bg-2"></div>
+
+    <main class="converter-box">
+        <header class="header">
+            <div class="logo-area">
+                <i class="fa-solid fa-temperature-empty logo-icon"></i>
+            </div>
+            <h1>Temp<span>Flow</span></h1>
+            <p>Convert temperatures instantly with elegant real-time calculation</p>
+        </header>
+
+        <form id="tempForm" novalidate>
+            <!-- Numeric Input Field -->
+            <div class="input-section">
+                <label for="tempInput">Input Value</label>
+                <div class="input-wrapper">
+                    <i class="fa-solid fa-calculator input-icon"></i>
+                    <input type="number" id="tempInput" placeholder="Enter temperature..." required step="any">
+                </div>
+                <div id="errorMessage" class="error-text"></div>
+            </div>
+
+            <div class="input-section">
+                <label>Select From Unit</label>
+                <div class="unit-tabs">
+                    <input type="radio" name="unit" id="unitC" value="C" checked>
+                    <label for="unitC" class="tab-btn">Celsius (°C)</label>
+
+                    <input type="radio" name="unit" id="unitF" value="F">
+                    <label for="unitF" class="tab-btn">Fahrenheit (°F)</label>
+
+                    <input type="radio" name="unit" id="unitK" value="K">
+                    <label for="unitK" class="tab-btn">Kelvin (K)</label>
+
+                    <div class="tab-slider"></div>
+                </div>
+            </div>
+
+            <button type="button" id="convertBtn" class="convert-button">
+                <span>Calculate</span>
+                <i class="fa-solid fa-bolt"></i>
+            </button>
+        </form>
+
+        <!-- Results -->
+        <section class="results-container">
+            <div class="result-card" id="resCelsius">
+                <span class="card-label">Celsius</span>
+                <h3 class="card-value">-- <span class="unit">°C</span></h3>
+            </div>
+
+            <div class="result-card" id="resFahrenheit">
+                <span class="card-label">Fahrenheit</span>
+                <h3 class="card-value">-- <span class="unit">°F</span></h3>
+            </div>
+
+            <div class="result-card" id="resKelvin">
+                <span class="card-label">Kelvin</span>
+                <h3 class="card-value">-- <span class="unit">K</span></h3>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
