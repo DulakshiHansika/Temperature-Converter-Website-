@@ -15,3 +15,7 @@ JavaScript (ES6+) - Core conversion logic, real-time input handling, and validat
 
 🚀 Live Demo
 You can view the live project here: [Click Here to View Live](https://dulakshihansika.github.io/Temperature-Converter-Website-/)
+
+📸 Project Preview
+
+![TempFlow Preview](./Temperature_Converter_Website0.png)
