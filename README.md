@@ -18,4 +18,4 @@ You can view the live project here: [Click Here to View Live](https://dulakshiha
 
 📸 Project Preview
 
-![TempFlow Preview](./Temperature_Converter_Website0.png)
+![TempFlow Preview](./TempFlow.png)
